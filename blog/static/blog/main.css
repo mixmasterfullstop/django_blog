@@ -1,0 +1,32 @@
+@import url('https://fonts.googleapis.com/css2?family=Cabin:wght@600&family=Jost:wght@600&display=swap');
+    body {
+ font-family: 'Cabin', sans-serif;
+background: #fafafa;
+
+}
+.navbar-nav{
+}
+
+.btn-primary:hover{
+    background-color: white;
+    color: black;
+}
+.col-lg-12{
+    background: #ffffff;
+    margin-top: 10px;
+}
+.card-footer{
+    align-content: space-between;
+margin-bottom: 13px;
+}
+
+
+
+
+
+
+
+
+
+}
+

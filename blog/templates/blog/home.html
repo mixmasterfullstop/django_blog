@@ -1,0 +1,22 @@
+{% extends 'blog/base.html' %}
+{% block content %}
+  {% for post in posts %}
+          <article class="card col-lg-12">
+          <h1>{{ post.title }}</h1>
+          <hr>
+          <img src="{{ post.image.url }} " class="img-thumbnail" height="100" width="100">
+              <hr>
+          <p>{{ post.content }}</p>
+              <hr>
+              <div class="card-footer">
+                    <small>{{ post.date_posted }} </small> <hr>
+                    <a class="btn btn-primary btn-sm " href="{% url 'blog:detail' post.id %}"><i class="fas fa-caret-right fa-lg"></i>  View Post</a>
+
+              </div>
+
+
+
+      </article>
+
+  {% endfor %}
+{% endblock %}
